@@ -650,13 +650,13 @@ function Game(gameDiv, stickyNodes) {
     
     modifyListeners(document, true, [
         ['mousedown', function (event) {
-            if (event.button === 2) {
+            if (event.button === 0) {
                 player1.setAccel(true);
                 return preventDefault(event);
             }
         }, true],
         ['mouseup', function (event) {
-            if (event.button === 2) {
+            if (event.button === 0) {
                 player1.setAccel(false);
                 return preventDefault(event);
             }
